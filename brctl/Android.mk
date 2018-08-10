@@ -10,6 +10,7 @@ LOCAL_CFLAGS := -O2 -g -Wno-ignored-qualifiers
 LOCAL_CFLAGS += -Wno-sign-compare -Wno-missing-field-initializers
 LOCAL_CFLAGS += -DHAVE_CONFIG_H -D_U_="__attribute__((unused))"
 LOCAL_CFLAGS += -DFEATURE_ANDROID
+LOCAL_CFLAGS += -Wno-error=unused-parameter
 
 LOCAL_C_INCLUDES += \
         $(LOCAL_PATH)/../libbridge/
